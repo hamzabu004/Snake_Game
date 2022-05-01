@@ -102,19 +102,19 @@ class Game:
                     elif event.key == K_UP:
                         if self.snake.direction != "down":
                             self.snake.move_up()
-                            continue
+                            break
                     elif event.key == K_DOWN:
                         if self.snake.direction != "up":
                             self.snake.move_down()
-                            continue
+                            break
                     elif event.key == K_LEFT:
                         if self.snake.direction != "right":
                             self.snake.move_left()
-                            continue
+                            break
                     elif event.key == K_RIGHT:
                         if self.snake.direction != "left":
                             self.snake.move_right()
-                            continue
+                            break
             try:
                 self.play()
             except Exception as e:
