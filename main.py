@@ -131,7 +131,7 @@ class Game:
                 else:
                     exit(0)
             
-            time.sleep(.15)
+            time.sleep(.1)
 
 
 class Snake:
